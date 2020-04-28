@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* BASE STYLES & MARGIN RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #138D75;
+    color: #fff;
+    line-height: 1.5;
+}
+
+ul {
+    /* takes out the bullet points */
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    /* removes the underline */
+    text-decoration: none;
+}
+
+/* large headings */
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+p {
+    margin: 10px 0;
+} 
+
+img {
+
+    /* 100% of coontainer by default */
+    width: 100%;
+}
+
+/* NAV BAR */
+.navbar {
+    display: flex; 
+    /* since it is a row we align on the center */
+    align-items: center;
+    /* if we want one content on left & ul on right
+    we need to space-between*/
+    justify-content: space-between; 
+    background-color:#1F618D;
+    color: #fff;
+    /* opacity: 0.9; */
+    width: 100%;
+    height: 70px;
+    /* to be stuck to the top */
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    z-index: 99;
+    
+} 
+
+
+.navbar a {
+    color: white;
+    /* padding top,bottom   left,right */
+    padding: 10px 20px;
+    margin: 0 5px;
+
+}
+
+.navbar a:hover {
+    border-bottom:  #F1C40F 3px solid;
+}
+
+.navbar ul {
+    /* so the ul list items align in a row */
+    display: flex;
+}
+
+.navbar .logo {
+    font-weight: 500;
+    
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+
+
+/* header top */
+.top{
+    background: url('../img/colorful-colourful-hardwood-parquet-139324\ \(1\).jpg') no-repeat center center/cover;
+   /* 100 viewport height */
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+/* center the content */
+.top .content {
+    display: flex;
+    /* change direction to column to go vertically*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* font-weight: bold; */
+    color:#fff;
+    /* set the height to 100% of its container (.top) */
+    height: 100%;
+    padding: 0 20px;
+}
+
+.top .content .h1 {
+    font-size: 65px;    
+}
+
+.top .content p {
+    
+    background: #0EA743;
+    padding: 35px;
+    border-radius: 5px;
+    opacity: 0.7;
+    font-size: larger;
+    max-width: 600px;
+    margin: 20px 0 30px; 
+}
+
+/* allows us to insert content 
+in this case content has to be empty*/
+.top::before {
+    content: '';
+    position: absolute; 
+    top:0;
+    left:0; 
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+/* select everything in .top and have it pop out of the screen */
+.top .content{
+    z-index: 15;
+}
+
+/* Icons  */
+
+.icons {
+    padding: 30px;
+}
+
+.icons h3 {
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+/* Round background for icons */
+.icons i {
+    background-color: #28a745;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+.flex-grid .icons{
+    padding-left: 10px 10px;
+    font-size: 6rem;
+    
+}
+
+
+
